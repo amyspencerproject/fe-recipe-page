@@ -29,8 +29,8 @@ You can use any tools you like to help you complete the challenge. So if you've 
 
 ### Links
 
-- Github Repo URL: [QR Code Repo](https://github.com/amyspencerproject/qr-code)
-- Live Site URL: [QR Code Page](https://amyspencerproject.github.io/qr-code/)
+- Github Repo URL: [QR Code Repo](https://github.com/amyspencerproject/fe-recipe-page)
+- Live Site URL: [QR Code Page](https://amyspencerproject.github.io/fe-recipe-page/)
 
 ## My process
 
@@ -38,7 +38,6 @@ You can use any tools you like to help you complete the challenge. So if you've 
 
 - Semantic HTML5 markup
 - CSS Variables
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
