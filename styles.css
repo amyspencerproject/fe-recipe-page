@@ -107,7 +107,7 @@ body {
 }
 main {
   font-size: 1rem;
-  color: var(--drk-grey);
+  color: var(--md-stone);
 }
 
 .prep-list li::marker,
@@ -118,33 +118,39 @@ main {
 
 .container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+}
+
+.recipe-image {
   max-width: 100%;
 }
 
 .recipe-desc-container {
   min-width: 19.4375rem;
-  margin: 0 0.75rem;
 }
+
 .recipe-title {
   font-family: "YoungSerif";
   font-size: 2.5rem;
+  font-weight: normal;
+  color: var(--drk-stone);
   line-height: 1;
   letter-spacing: 0px;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin: 2.5rem 2rem;
 }
 
 .recipe-description {
   margin-bottom: 1rem;
+  margin: 0 2rem;
 }
 .prep-container {
   background-color: var(--lt-rose);
   display: flex;
   flex-flow: column wrap;
   padding: 2.5rem;
+  margin: 1rem;
   border-radius: 12px;
 }
 
@@ -175,8 +181,34 @@ main {
   margin: 1rem;
 }
 
+.ingredient-list {
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0;
+}
+
+.ingredient-list li {
+  padding-right: 0.5rem;
+}
+
+.ingredient-list p {
+  padding-left: 0.5rem;
+}
+
 .instruction-container {
   margin: 1rem;
+}
+
+.instruction-list {
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0;
+}
+
+.instruction-list li {
+  padding-right: 0.5rem;
+}
+
+.instruction-list p {
+  padding-left: 0.5rem;
 }
 
 .instruction-container,
@@ -188,6 +220,7 @@ main {
 .nutrition-container {
   margin: 1rem;
 }
+
 .section-title {
   font-size: 1.75rem;
   color: var(--brown);
@@ -243,6 +276,9 @@ footer a {
 
 /* tablet change at 640px */
 @media screen and (min-width: 40rem) {
+  .recipe-image {
+    max-width: 33.5rem;
+  }
 }
 
 /* desktop change at 960px */

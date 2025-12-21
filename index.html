@@ -19,7 +19,7 @@
   <body>
     <main>
       <div class="container">
-        <image src="assets/images/image-omelette.jpeg"></image>
+        <image class="recipe-image" src="assets/images/image-omelette.jpeg"></image>
         <div class="recipe-desc-container">
           <h1 class="recipe-title">Simple Omelette Recipe</h1>
           <p class="recipe-description">
@@ -41,12 +41,12 @@
         <div class="ingredient-container">
           <h2 class="section-title">Ingredients</h2>
           <ul class="ingredient-list">
-            <li>2-3 large eggs</li>
-            <li>Salt, to taste</li>
-            <li>Pepper, to taste</li>
-            <li>1 tablespoon of butter or oil</li>
+            <li><p>2-3 large eggs</p></li>
+            <li><p>Salt, to taste</p></li>
+            <li><p>Pepper, to taste</p></li>
+            <li><p>1 tablespoon of butter or oil</p></li>
             <li>
-              Optional fillings: cheese, diced vegetables, cooked meats, herbs
+              <p>Optional fillings: cheese, diced vegetables, cooked meats, herbs</p>
             </li>
           </ul>
         </div>
@@ -54,10 +54,10 @@
           <h2 class="section-title">Instructions</h2>
           <ol class="istruction-list">
             <li>
-              <p></p>
+              <p>
               <strong>Beat the eggs</strong>: In a bowl, beat the eggs with a
               pinch of salt and pepper until they are well mixed. You can add a
-              tablespoon of water or milk for a fluffier texture.
+              tablespoon of water or milk for a fluffier texture.</p>
             </li>
             <li>
               <p>
@@ -100,24 +100,26 @@
             The table below shows nutritional values per serving without the
             additional fillings.
           </p>
-          <div class="nutrition-table">
-            <div class="nutrition-info">
-              <div>Calories</div>
-              <div class="nutrition-units">277kcal</div>
-            </div>
-            <div class="nutrition-info">
-              <div>Carbs</div>
-              <div class="nutrition-units">0g</div>
-            </div>
-            <div class="nutrition-info">
-              <div>Protein</div>
-              <div class="nutrition-units">20g</div>
-            </div>
-            <div class="nutrition-info">
-              <div>Fat</div>
-              <div class="nutrition-units">22g</div>
-            </div>
-          </div>
+          <table class="nutrition-table">
+            <tbody>
+              <tr>
+                <th role="row" class="nutrition-info">Calories</th>
+                <td class="nutrition-units">277kcal</td>
+              </tr>
+              <tr>
+                <th role="row" class="nutrition-info">Carbs</th>
+                <td class="nutrition-units">0g</td>
+              </tr>
+              <tr>
+                <th role="row" class="nutrition-info">Protein</th>
+                <td class="nutrition-units">20g</td>
+              </tr>
+              <tr>
+                <th role="row" class="nutrition-info">Fat</th>
+                <td class="nutrition-units">22g</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </main>
