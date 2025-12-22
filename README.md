@@ -42,13 +42,18 @@ You can use any tools you like to help you complete the challenge. So if you've 
 
 ### What I learned
 
--
+- Always use header cells (th) not td for the header cells, and give them a scope of row.
+- make tables width 100%
+- make th and td elements width 50%
+- give each cell a little padding.
+
+Never try to use large paddings to achieve a layouts.
 
 ### Continued development
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [List Marker Spacing](https://css-tricks.com/everything-you-need-to-know-about-the-gap-after-the-list-marker/) - Everything you ever wanted to know about the gap after the list marker
 
 ## Author
 
