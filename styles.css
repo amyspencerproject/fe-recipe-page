@@ -108,12 +108,7 @@ body {
 main {
   font-size: 1rem;
   color: var(--md-stone);
-}
-
-.prep-list li::marker,
-.ingredient-list li::marker {
-  font-size: 0.75rem;
-  padding-right: 1rem;
+  background-color: var(--lt-stone);
 }
 
 .container {
@@ -121,14 +116,25 @@ main {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  background-color: var(--white);
+  max-width: 23.4375rem;
+  /* border-radius: 24px; */
 }
 
+.section-title {
+  font-size: 1.75rem;
+  color: var(--brown);
+  font-family: "YoungSerf";
+}
+
+/* ======= recipe ======= */
 .recipe-image {
-  max-width: 100%;
+  max-width: 23.4375rem;
+  /* border-radius: 12px; */
 }
 
 .recipe-desc-container {
-  min-width: 19.4375rem;
+  max-width: 19.4375rem;
 }
 
 .recipe-title {
@@ -138,19 +144,22 @@ main {
   color: var(--drk-stone);
   line-height: 1;
   letter-spacing: 0px;
-  margin: 2.5rem 2rem;
+  margin: 2.5rem 0rem;
 }
 
 .recipe-description {
   margin-bottom: 1rem;
-  margin: 0 2rem;
 }
+
+/* ======= prep ======= */
+
 .prep-container {
   background-color: var(--lt-rose);
   display: flex;
   flex-flow: column wrap;
-  padding: 2.5rem;
-  margin: 1rem;
+  padding: 1.5rem 1.5rem;
+  margin: 1rem 0rem;
+  max-width: 19.4375rem;
   border-radius: 12px;
 }
 
@@ -159,97 +168,111 @@ main {
   font-family: "Outfit";
   font-size: 1.25rem;
 }
+
 .prep-list {
   margin: 0.5rem 4rem 0.5rem 1rem;
-  padding: 0;
+  padding: 0rem;
 }
 
 .prep-list li {
-  padding-right: 0.5rem;
-}
-
-.prep-list p {
-  padding-left: 0.5rem;
+  /* padding-left: 0.5rem; */
+  padding: 0.5rem 0;
 }
 
 .prep-list li::marker {
+  font-size: 0.75rem;
+  padding-right: 1rem;
   color: var(--drk-rose);
 }
 
+.prep-list p {
+  padding-left: 1rem;
+}
+
+/* ======= ingredient ======= */
+
 .ingredient-container {
   padding: 1rem 0;
-  margin: 1rem;
+  max-width: 19.4375rem;
 }
 
 .ingredient-list {
-  margin: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0.5rem 1rem;
   padding: 0;
 }
 
 .ingredient-list li {
-  padding-right: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  margin-left: 0.5;
+}
+
+.ingredient-list li::marker {
+  color: var(--brown);
+  font-size: 0.75rem;
+  padding-right: 1rem;
 }
 
 .ingredient-list p {
   padding-left: 0.5rem;
 }
 
+/* ======= instruction ======= */
+
 .instruction-container {
-  margin: 1rem;
+  margin: 1rem 0rem;
+  border-top: solid 1px var(--lt-stone);
+  padding: 1rem 0;
+  max-width: 19.4375rem;
 }
 
 .instruction-list {
-  margin: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0.5rem 1rem;
   padding: 0;
 }
 
 .instruction-list li {
-  padding-right: 0.5rem;
+  margin-left: 0.5rem;
+  padding: 0.5rem 0rem 0.5rem 1rem;
 }
 
-.instruction-list p {
-  padding-left: 0.5rem;
+.instruction-list li::marker {
+  color: var(--brown);
+  font-weight: bold;
 }
+/* ======= nutrition ======= */
 
-.instruction-container,
 .nutrition-container {
   border-top: solid 1px var(--lt-stone);
   padding: 1rem 0;
+  margin: 1rem 0;
+  max-width: 19.4375rem;
 }
 
-.nutrition-container {
-  margin: 1rem;
+tr {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.section-title {
-  font-size: 1.75rem;
-  color: var(--brown);
+th,
+td {
+  text-align: left;
+}
+
+.nutrition-info,
+.nutrition-units {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--lt-stone);
 }
 
 .nutrition-info {
-  border-bottom: 1px solid var(--lt-stone);
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  padding: 1rem 1rem;
+  /* padding: 1rem 2rem; */
 }
 
 .nutrition-units {
   color: var(--brown);
   font-weight: bold;
-}
-
-.ingredient-list li::marker,
-.instruction-container li::marker {
-  color: var(--brown);
-}
-
-.instruction-container li::marker {
-  font-weight: bold;
-}
-
-.instruction-list ol {
-  padding-left: 2rem;
 }
 
 /* ========== Footer ========== */
@@ -276,6 +299,9 @@ footer a {
 
 /* tablet change at 640px */
 @media screen and (min-width: 40rem) {
+  .container {
+    max-width: 38.5rem;
+  }
   .recipe-image {
     max-width: 33.5rem;
   }
