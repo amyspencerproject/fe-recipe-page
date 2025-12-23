@@ -227,7 +227,7 @@ main {
 .instruction-container {
   margin: 1rem 2rem;
   border-top: solid 1px var(--lt-stone);
-  padding: 1rem 0;
+  padding-top: 1rem;
   /* max-width: 19.4375rem; */
 }
 
@@ -250,7 +250,7 @@ main {
 .nutrition-container {
   border-top: solid 1px var(--lt-stone);
   padding: 1rem 0 2.5rem 0;
-  margin: 1rem 2rem;
+  margin: 0 2rem;
   /* max-width: 19.4375rem; */
 }
 
