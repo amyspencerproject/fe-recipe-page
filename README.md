@@ -49,11 +49,11 @@ Desktop view
 
 ### What I learned
 
-- Always use header cells (th) not td for the header cells, and give them a scope of row.
-- make tables width 100%
-- make th and td elements width 50%
-- give each cell a little padding.
-- Never try to use large paddings to achieve a layouts.
+Attempted to use `<th>` in the Nutrituion table even though the design does not use a tradtional table and therefore not a column heading. I thought this would be good for accessiblity and maybe helpful for styling. By using a tag of `role="row"` I got the `<th>` to act as a row not a column. When I first submitted my solution I got the following feedback.
+
+"The element <th role="row"> is using an ARIA role that requires specific child elements to maintain semantic structure and accessibility. The row role must contain elements with the columnheader or rowheader roles as children, but here it’s applied directly to a <th> without the required children. This breaks the expected accessibility tree, confusing assistive technologies."
+
+I made the accessibility worse by with my solution.
 
 ### Continued development
 

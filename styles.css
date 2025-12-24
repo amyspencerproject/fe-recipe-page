@@ -259,18 +259,8 @@ tr {
   align-items: center;
 }
 
-th {
-  font-weight: normal;
-  padding-left: 1.5rem;
-  width: 50%;
-}
-
 td {
   width: 50%;
-}
-
-th,
-td {
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
 }
@@ -279,6 +269,10 @@ td {
 .nutrition-units {
   border-bottom: 1px solid var(--lt-stone);
   text-align: left;
+}
+
+.nutrition-info {
+  padding-left: 1.5rem;
 }
 
 .nutrition-units {
