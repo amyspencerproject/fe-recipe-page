@@ -25,12 +25,19 @@ You can use any tools you like to help you complete the challenge. So if you've 
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Mobile view
+![](./screenshots/mobile.png)
+
+Tablet view
+![](./screenshots/tablet.png)
+
+Desktop view
+![](./screenshots/desktop.png)
 
 ### Links
 
-- Github Repo URL: [QR Code Repo](https://github.com/amyspencerproject/fe-recipe-page)
-- Live Site URL: [QR Code Page](https://amyspencerproject.github.io/fe-recipe-page/)
+- Github Repo URL: [Recipe Page Repo](https://github.com/amyspencerproject/fe-recipe-page)
+- Live Site URL: [Recipe Page](https://amyspencerproject.github.io/fe-recipe-page/)
 
 ## My process
 
@@ -46,10 +53,11 @@ You can use any tools you like to help you complete the challenge. So if you've 
 - make tables width 100%
 - make th and td elements width 50%
 - give each cell a little padding.
-
-Never try to use large paddings to achieve a layouts.
+- Never try to use large paddings to achieve a layouts.
 
 ### Continued development
+
+Maybe try using gap since all the elements will be spaced the same. Here is a [discord thread](https://canary.discord.com/channels/824970620529279006/1410499692571394118) about when to use gap or margins
 
 ### Useful resources
 
