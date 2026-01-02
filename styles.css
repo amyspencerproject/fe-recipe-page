@@ -101,7 +101,7 @@ select {
 
 body {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   font-family: "Outfit", sans-serif;
@@ -112,12 +112,11 @@ main {
   font-size: 1rem;
   color: var(--md-stone);
   background-color: var(--lt-stone);
-  /* max-width: 100%; */
 }
 
 .container {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--white);
@@ -134,10 +133,17 @@ main {
 /* ======= recipe ======= */
 
 .recipe-desc-container,
+.prep-container,
 .ingredient-container,
 .instruction-container,
 .nutrition-container {
-  margin: 0 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.recipe-desc-container {
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .recipe-title {
@@ -147,22 +153,16 @@ main {
   color: var(--drk-stone);
   line-height: 1;
   letter-spacing: 0px;
-  margin: 2.5rem 0rem;
-}
-
-.recipe-description {
-  margin-bottom: 1rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 /* ======= prep ======= */
 
 .prep-container {
   background-color: var(--lt-rose);
-  display: flex;
-  flex-flow: column wrap;
-  padding: 1.5rem 1.5rem;
-  margin: 1rem 2rem;
-  /* max-width: 19.4375rem; */
+  padding: 1.5rem;
+  width: calc(100% - 5rem);
   border-radius: 12px;
 }
 
@@ -173,19 +173,19 @@ main {
 }
 
 .prep-list {
-  margin: 0.5rem 4rem 0.5rem 1rem;
   padding: 0rem;
+  padding-left: 1rem;
+  margin-right: 1.5rem;
 }
 
 .prep-list li {
-  /* padding-left: 0.5rem; */
-  padding: 0.5rem 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   padding-left: 1rem;
 }
 
 .prep-list li::marker {
   font-size: 0.75rem;
-  padding-right: 1rem;
   color: var(--drk-rose);
 }
 
@@ -193,42 +193,44 @@ main {
 
 .ingredient-container {
   padding-top: 1rem;
-  /* max-width: 19.4375rem; */
+  padding-bottom: 1rem;
+  width: calc(100% - 5rem);
 }
 
 .ingredient-list {
-  margin: 0.5rem 1rem;
   padding: 0;
+  margin-left: 1rem;
 }
 
 .ingredient-list li {
-  padding: 0.5rem 1rem;
-  margin-left: 0.5rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .ingredient-list li::marker {
   color: var(--brown);
   font-size: 0.75rem;
-  padding-right: 1rem;
 }
 
 /* ======= instruction ======= */
 
 .instruction-container {
-  margin: 1rem 2rem;
+  /* margin: 1rem 2rem; */
   border-top: solid 1px var(--lt-stone);
   padding-top: 1rem;
-  /* max-width: 19.4375rem; */
+  padding-bottom: 1rem;
 }
 
 .instruction-list {
-  margin: 0.5rem 1rem;
   padding: 0;
+  margin-left: 1.5rem;
 }
 
 .instruction-list li {
-  margin-left: 0.5rem;
-  padding: 0.5rem 0rem 0.5rem 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .instruction-list li::marker {
@@ -239,13 +241,13 @@ main {
 
 .nutrition-container {
   border-top: solid 1px var(--lt-stone);
-  padding: 1rem 0 2.5rem 0;
-  margin: 0 2rem;
-  /* max-width: 19.4375rem; */
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
 }
 
 .nutrition-container p {
-  padding: 0.5rem 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 table {
@@ -278,6 +280,7 @@ td {
 .nutrition-units {
   color: var(--brown);
   font-weight: bold;
+  padding-left: 1rem;
 }
 
 /* ========== Footer ========== */
@@ -287,7 +290,7 @@ footer {
   flex-flow: column wrap;
   justify-content: end;
   align-items: center;
-  padding-top: 8rem;
+  /* padding-top: 8rem; */
   padding-bottom: 1rem;
 }
 
@@ -307,27 +310,22 @@ footer a {
 @media screen and (min-width: 40rem) {
   .container {
     max-width: 38.5rem;
-    /* max-width: 616px; */
     border-radius: 24px;
-    padding-top: 2.5rem;
-    margin-top: 8rem;
   }
 
   .recipe-image {
     max-width: 33.5rem;
-    /* max-width: 536px; */
     border-radius: 12px;
+    padding-top: 2.5rem;
   }
 
-  .recipe-image,
   .recipe-desc-container,
   .prep-container,
   .ingredient-container,
   .instruction-container,
   .nutrition-container {
-    /* max-width: 33.5rem; */
-    /* margin: 0 4.90625rem; */
-    width: 87%;
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
   }
 }
 
@@ -335,20 +333,9 @@ footer a {
 @media screen and (min-width: 60rem) {
   .container {
     max-width: 46rem;
-    padding-top: 2.5rem;
   }
 
   .recipe-image {
     max-width: 41rem;
-  }
-
-  .recipe-desc-container,
-  .prep-container,
-  .ingredient-container,
-  .instruction-container,
-  .nutrition-container {
-    /* max-width: 41rem; */
-    /* margin: 0 2.5rem; */
-    width: 89%;
   }
 }
