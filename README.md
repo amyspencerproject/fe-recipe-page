@@ -63,7 +63,7 @@ Maybe try using gap since all the elements will be spaced the same. Here is a [d
 
 - [List Marker Spacing](https://css-tricks.com/everything-you-need-to-know-about-the-gap-after-the-list-marker/) - Everything you ever wanted to know about the gap after the list marker
 
-- [Article by Grace Snow](https://fedmentor.dev/posts/padding-margin/)
+- [Article by Grace Snow](https://fedmentor.dev/posts/padding-margin/) - basics of margins and padding
 
 ## Author
 
